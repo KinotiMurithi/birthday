@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(background.png);
+    font-family: sans-serif;
+}
+
+h2{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: rem;
+}
+
+.mybirthday{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.countdown{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.day, .hour, .minute, .second {
+    font-size: 3rem;
+}
+.day{
+    color: green;
+}
+.second{
+    color: red;
+}
+.hour{
+    color: blue;
+}
+.minute{
+    color: yellow;
+}
+.kinotis{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    min-height: 80vh;
+}
+
+.bubbles img {
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+
+@keyframes bubble {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+    
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 40px; 
+}
+.bubbles img:nth-child(2){
+    animation-delay: 3.4s;
+    width: 35px; 
+}
+.bubbles img:nth-child(3){
+    animation-delay: 4.8;
+    width: 50px; 
+}
+.bubbles img:nth-child(4){
+    animation-delay: 2.7s;
+    width: 40px; 
+}
+.bubbles img:nth-child(5){
+    animation-delay: 4.2s;
+    width: 35px; 
+}
+.bubbles img:nth-child(6){
+    animation-delay: 3.2s;
+    width: 45px; 
+}
+.bubbles img:nth-child(7){
+    animation-delay: 2.9s;
+    width: 40px; 
+}
+
+
