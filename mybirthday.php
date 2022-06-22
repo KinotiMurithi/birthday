@@ -1,4 +1,1 @@
-<?php 
-include_once("mybirthday.html");
-
-?>
+<?php include_once("mybirthday.html"); ?>
